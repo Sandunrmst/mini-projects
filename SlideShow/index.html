@@ -3,49 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Basic JavaScript Slideshow</title>
-<style>
-    .slider{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    h2{
-        color: rgb(39, 67, 226);
-        font-family:Georgia, 'Times New Roman', Times, serif
-    }
-
-    img{
-        width: 50%;
-        border-radius: 18px;
-    }
-
-    .move{
-        text-decoration: none;
-        font-size: 1.2rem;
-        color: white;
-        background-color: rgb(39, 67, 226);
-        border-radius: 25px;
-        padding: 10px 15px;
-        border: none;
-        transition: 0.125s ease-in-out;
-        
-    }
-    .move:hover{
-        background-color: rgb(53, 83, 250);
-        border: 2px solid rgb(23, 45, 170);;
-    }
-
-    #next{
-        margin-left: 15px;
-    }
-
-    .btns{
-        margin-top: 25px;
-    }
-
-    
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -54,42 +12,7 @@
     	<img src="image1.jpg" alt="slideshow image" id="myimage">
         <p class="btns"><a class="move" href="#" id="previous">Previous</a> <a class="move" href="#" id="next">Next</a></p>
     </div>
-    
-    
-    
-    
+    <script src="script.js"></script>
 </body>
 
-    <script>
-
-        (function(){
-
-            document.getElementById('next').onclick = nextImage;
-            document.getElementById('previous').onclick = privousImage;
-            
-            images = ["image1.jpg","image2.jpg","image3.jpg", "image4.jpg","image5.jpg"];
-
-            imgCounter =0;
-
-            function nextImage(){
-
-                imgCounter ++;
-                if(imgCounter > images.length - 1 ){
-                    imgCounter = 0;
-                }
-                document.getElementById('myimage').src = images[imgCounter];
-
-            }
-
-            function privousImage(){
-                imgCounter --;
-                if(imgCounter < 0){
-                    imgCounter = images.length - 1;
-                }
-                document.getElementById('myimage').src = images[imgCounter];
-            }
-
-        }());
-
-    </script>
 </html>

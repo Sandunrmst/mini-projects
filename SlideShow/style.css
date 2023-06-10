@@ -1,0 +1,40 @@
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: rgb(39, 67, 226);
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+img{
+    width: 50%;
+    border-radius: 18px;
+}
+
+.move{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(39, 67, 226);
+    border-radius: 25px;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.125s ease-in-out;
+    
+}
+.move:hover{
+    background-color: rgb(53, 83, 250);
+    border: 2px solid rgb(23, 45, 170);;
+}
+
+#next{
+    margin-left: 15px;
+}
+
+.btns{
+    margin-top: 25px;
+}
+
