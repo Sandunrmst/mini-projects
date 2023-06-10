@@ -1,0 +1,81 @@
+.main{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#content{
+    width: 60%;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    position: absolute;
+    border-radius: 18px;
+
+}
+
+.previous{
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-top: 28%;
+    margin-left: 30px;
+    cursor: pointer;
+    z-index: 50;
+
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: 28%;
+    margin-right: 30px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+h1{
+    color: rgb(39, 67, 226);
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+
+.move{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(233, 23, 8);
+    border-radius: 25px;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.125s ease-in-out;
+    
+}
+.move i{
+    color: white;
+}
+.move:hover{
+    background-color: rgb(53, 83, 250);
+    transform: scale(1.2);
+}
+
+
+/* Animation Styles */
+
+.fadeinimg {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
