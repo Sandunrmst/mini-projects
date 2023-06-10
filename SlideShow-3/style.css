@@ -4,9 +4,13 @@
     justify-content: center;
 }
 
-#content{
+#content {
     width: 60%;
     position: relative;
+}
+
+#imageContainer{
+    width: 60%;
 }
 
 img{
