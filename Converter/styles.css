@@ -40,6 +40,8 @@ h2 {
     padding: 30px 20px 30px 20px;
     background-color: #f1ffb6;
 	width: 80%;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
 }
 
 .display{
@@ -47,6 +49,8 @@ h2 {
     background-color: #97c91f;
 	width: 80%;
 	text-align: center;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
 }
 
 #convert{
