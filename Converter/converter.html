@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+
+    <!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+	
+	<!--/ /-------- My Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1>Miles to Kilometers Converter</h1>
+        <div class="input">
+            <p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+
+            <form method="post" action="phpfile.php" id="convert">
+        
+                <input  type="text" name="distance" id="distance" placeholder="Distance">
+                <input class="sub" type="submit" name="convertdist" value="Convert Distance">
+            
+            </form>
+        </div>
+
+        <div class="display" id="answer">
+            <h2 class="invisible">Answer goes here</h2>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('convert').addEventListener('submit', function(event){
+            event.preventDefault(); //This will privent action of phpfile loading when user click submit button
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* RMST */
+body {
+	color:#333;
+	font-family: 'PT Sans', sans-serif;
+	padding:50px 0;
+}
+
+h1, h2, p {
+	margin: 0;
+	padding: 0;
+}
+p{
+	font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+	text-align:center;
+	margin-bottom: 1em;
+	text-transform:uppercase;
+}
+
+h2 {
+	font-size:130%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 40px auto ;
+}
+
+.input{
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+    background-color: #f1ffb6;
+	width: 80%;
+}
+
+.display{
+	padding: 30px 20px 30px 20px;
+    background-color: #97c91f;
+	width: 80%;
+	text-align: center;
+}
+
+#convert{
+	margin-top: 10px;
+}
+
+/* .invisible {
+	color:#AABCCC;
+} */
+form{
+	display: flex;
+	justify-content: center;
+}
+form .sub{
+	margin-left: 10px;
+}
+
+@media only screen and (max-width: 782px) {
+	form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	form .sub{
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	input[type="text"] {
+		
+		
+		
+	}
+  }
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="text"] {
+	height: 45px;
+	padding: 6px 10px; 
+	background-color: #fff;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	box-shadow: none;
+	box-sizing: border-box; 
+	text-align:center;
+   }
+  
+  input[type="text"]:focus{
+	border: 1px solid #97c91f;
+	outline: 0; 
+  }
+	
+  label {
+	display: block;
+	margin-bottom: .5rem;
+	font-weight: 600; 
+  }
+
+  input[type="submit"] {
+	display: inline-block;
+	height: 45px;
+	padding: 0 30px;
+	color: #555;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	cursor: pointer;
+	box-sizing: border-box;
+  }
+  
+  input[type="submit"]:hover,input[type="submit"]:focus{
+	color: #97c91f;
+  	border-color: #97c91f;
+  	outline: 0; 
+  }
