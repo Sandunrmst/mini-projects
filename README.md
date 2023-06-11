@@ -6,4 +6,5 @@ JavaScript practice exercises with solutions
 <a href="https://sandunrmst.github.io/mini-projects/SlideShow-2/" target="_blank">View Slide Show 02</a><br>
 <a href="https://sandunrmst.github.io/mini-projects/SlideShow-3/" target="_blank">With Fade Effects 03</a>
 
-<h3>Miles to Kilometers Converter</h3>
+<h1>Miles to Kilometers Converter</h1>
+<a href="https://sandunrmst.github.io/mini-projects/Converter/" target="_blank"> View Converter</a>
