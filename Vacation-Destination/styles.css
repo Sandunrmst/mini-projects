@@ -1,0 +1,113 @@
+h1, h2, h3, h4, ul, li, p{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+header{
+    padding: 50px;
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main{
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+main form{
+    width: 40%;
+    margin-top: 16px;
+    max-height: 425px;
+}
+
+main article{
+    width: 45%;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 1rem;
+}
+
+#title{
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+#destination_details_form{
+    border-radius: 12px;
+    border: 2px solid cornflowerblue;
+    padding: 15px 25px;
+}
+
+input, textarea, #destination_details_form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    border: 1px solid #666;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input[type="text"]:focus, input[type="url"]:focus, textarea[id="description"]:focus {
+	border: 2px solid cornflowerblue;
+	outline: 0;
+  }
+
+#destination_details_form button{
+    font-weight: 700;
+    background-color: cornflowerblue;
+    outline: none;
+    border: 2px solid;
+    border-radius: 5px;
+    color: #efefef;
+    transition: 0.125s ease-in-out;
+}
+
+#destination_details_form button:hover{
+    background-color: white;
+    color: #333;
+    border: 2px solid cornflowerblue;
+}
+
+.card {
+    padding: 20px;
+    background-color: #efefef;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid cornflowerblue;
+}
+
+.card button{
+    padding: 7px 20px;
+    background-color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    outline: none;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #efefef;
+}
+
+.card button:hover{
+    background-color: white;
+    color: #333;
+    border: 2px solid cornflowerblue;
+}

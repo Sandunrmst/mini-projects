@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacation Destinations WishList</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Vacation Destination Wish List</h1>
+      <p>
+        Found exciting places to visit on your next vacation? Use the form below
+        to add them to your wish list.
+      </p>
+    </header>
+    <main>
+      <form id="destination_details_form">
+        <label for="name">Destination Name</label>
+        <input
+          type="text"
+          id="names"
+          name="name"
+          required
+          placeholder="Provide a name for the destination"
+        />
+
+        <label for="location">Destination location</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          required
+          placeholder="Where is this destination location"
+        />
+
+        <label for="photo">Photo</label>
+        <input type="url" id="photo" name="photo" placeholder="Enter your any image url link from web"/>
+
+        <label for="description">Destination Description</label>
+        <textarea
+          type="textarea"
+          id="description"
+          name="description"
+        ></textarea>
+
+        <button type="submit">Add to List</button>
+      </form>
+
+      <article>
+        <h2 id="title">Enter Description Details</h2>
+        <div id="destination_container">
+          <!-- Dynamically popular by JavaScript -->
+
+          <!-- <div class="card">
+                    <img src="images/signpost.jpg">
+                    <div class="card-body">
+                        <h3>Destination Name</h3>
+                        <h4>Destination Location</h4>
+                        <p class="card-text">Destination Desxcription</p>
+                        <button>Remove</button>
+                    </div>
+                </div> -->
+        </div>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
