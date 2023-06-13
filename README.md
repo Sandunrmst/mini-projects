@@ -10,6 +10,11 @@ JavaScript practice exercises with solutions
 <a href="https://sandunrmst.github.io/mini-projects/Converter/" target="_blank"> View Converter</a>
 
 <h1>My Vacation Detination</h1>
-<a href="https://sandunrmst.github.io/mini-projects/Vacation-Destination/" target="_blank"> View Vacation Detination</a>
+<a href="https://sandunrmst.github.io/mini-projects/Vacation-Destination/" target="_blank"> View Vacation Detination</a><br>
 <img src="https://github.com/Sandunrmst/mini-projects/assets/49017841/ef286362-c574-4ba3-a254-d55aa70c6135" alt="Vaction List">
+
+<h1>My Todo List</h1>
+<a href="https://sandunrmst.github.io/mini-projects/My-Todo/" target="_blank"> View Todo List</a><br>
+<img src="https://github.com/Sandunrmst/mini-projects/assets/49017841/89a92d21-b482-428c-acee-57d6050f2b2e" alt="Todo List">
+
 
