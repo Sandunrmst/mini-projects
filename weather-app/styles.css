@@ -97,6 +97,7 @@ body{
 }
 .weather-app .info-footer .wind-speed{
     display: flex;
+    justify-content: flex-end;
 }
 
 .weather-app .info-footer .wind-speed img{
@@ -108,5 +109,4 @@ body{
 .weather-app .info-footer .humidity .left, 
 .weather-app .info-footer .wind-speed .left {
     text-align: left;
-    width: 100%;
 }
