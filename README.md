@@ -19,4 +19,8 @@ JavaScript practice exercises with solutions
 <p>******</p>
 <img src="https://github.com/Sandunrmst/mini-projects/assets/49017841/89a92d21-b482-428c-acee-57d6050f2b2e" alt="Todo List">
 
+<h1>World Weather App</h1>
+<a href="https://sandunrmst.github.io/mini-projects/My-Todo/" target="_blank"> View App</a><br>
+<p>******</p>
+<img src="https://github.com/Sandunrmst/mini-projects/assets/49017841/b562c93b-3324-4efe-a0d1-9c19c65ea7d2" alt="weather app">
 
