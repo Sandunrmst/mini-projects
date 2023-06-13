@@ -22,8 +22,24 @@ body{
     
 }
 
+.weather-app .city-error{
+    margin-top: 10px;
+    margin-left: -45px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
 .weather-app .info-main img{
  transition: 0.25s ease-in-out;
+}
+
+.weather-app .info-main .temp{
+    font-weight: 400;
+    font-size: 80px;
+}
+.weather-app .info-main .city{
+    
+    font-size: 30px;
 }
 
 .weather-app .info-main img:hover{
