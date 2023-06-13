@@ -8,6 +8,10 @@ function time() {
     let m = data.getMinutes();
     let s = data.getSeconds();
 
+    var  ampm_time = h >= 12 ? 'PM' : 'AM';
+    h = h % 12;
+    h = h ? h : 12;
+
     if(h < 10)
         h = "0" +h;
     if(m < 10)
@@ -15,8 +19,8 @@ function time() {
     if(s < 10)
         s = "0" + s;
 
-    document.getElementById("hour").innerHTML = h +":"+ m + ":" + s;
-    setTimeout('time()', 500);
+    document.getElementById("time").innerHTML = h +":"+ m + ":" + s + " " + ampm_time;
+    setTimeout('time()', 1000); //it's better use 500 timeout in milisecond 1000 -> 1 second
 }
 
 

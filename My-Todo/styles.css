@@ -19,6 +19,11 @@ body{
     color: #fff;
 }
 
+header h1{
+    border-left: 4px solid yellow;
+    padding-left: 10px;
+}
+
 main {
     min-height: 100vh;
     display: flex;
@@ -36,20 +41,21 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .app header h1{
     color: #fff;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .app header button {
-    color:  #fff;
+    background-color: rgb(255, 255, 255);
+    color: #242948;
+    border: 2px solid #fff;
     font-size: 20px;
     font-weight: 400;
-    border: 2px solid #fff;
     padding: 10px 22px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -57,15 +63,33 @@ main {
 }
 
 .app header button:hover {
-    background-color: rgb(255, 255, 255);
-    color: #242948;
+
+    color:  yellow;
+    background: none;
+    border: 2px solid yellow;
+}
+.date-time{
+    display: flex;
+    justify-content: center;
 }
 
 .date-hour{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    padding: 10px 60px;
+    max-width: 600px;
+}
+.date-hour #date{
+    color:  yellow;
+}
+
+.date-hour #time{
+    padding-left: 20px;
 }
 
 .item {
