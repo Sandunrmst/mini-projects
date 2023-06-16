@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #1471db;
+}
+
+.wrapper{
+    margin: 60px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, 265px);
+    align-items: center;
+    justify-content: center;
+}
+.wrapper li{
+    list-style: none;
+    height: 250px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 15px 25px 20px;
+}
+
+.add-box, .icons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.add-box .icons:hover{
+    transform: scale(1.12);
+}
+
+.bottom-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-content .settings{
+    cursor: pointer;
+}
+.add-box .icons{
+    height: 80px;
+    width: 80px;
+    color: #0a7cff;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 3px dashed #0a7cff;
+}
+
+.add-box p{
+    color: #0a7cff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note .details{
+    height: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*For scroll to notes*/
+}
+
+.note .details p{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.note span{
+    display: block;
+    margin-top: 5px;
+    color: #424242;
+}
+
+.note .bottom-content{
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #c5c5c5;
+
+}.settings{
+    position: relative;
+    z-index: 1;
+}
+
+.settings .menu{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transform: scale(0); /*This will hide menu is showing*/
+    transform-origin: bottom right; /*Check this it so cool way to make movement*/
+    transition: transform 0.2s ease;
+}
+.settings.show .menu{
+    transform: scale(1); /*This will show menu whenclick on setting icon -> related with above code*/ 
+}
+.settings .menu .menu-align{
+    display: flex;
+    align-items: center;
+}
+
+.settings .menu .menu-align .space{
+    margin-left: 6px;
+}
+.settings .menu .delete span{
+    color: rgb(214, 58, 58);
+}
+.settings .menu li{
+    height: 25px;
+    border-radius: 0;
+    background: #fdfdfd;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.settings .menu li:hover{
+    background: #f3f3f3;
+}
+
+/* popup window form  */
+
+.popup-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 4;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.popup-box .popup{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /*This will position content in middle of the window*/
+    left: 50%; /*This will position content in middle of the window*/
+    z-index: 5;
+    max-width: 450px;
+    width: 100%;
+    /* background: red; check for calc content */
+    transform: translate(-50%, -50%);
+}
+
+.popup-box, .popup-box .popup{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    /*Hide popup box with css*/
+}
+
+.popup-box.show , .popup-box.show .popup{
+    opacity: 1;
+    pointer-events: auto;
+    /* This class will add from javaScript when user click add note */
+}
+
+
+.popup .content{
+    width: calc(100% - 15px);
+    background: #fff;
+    border-radius: 5px;
+}
+
+.popup .content header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.popup .content header p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.popup .content header span{
+    color: #8b8b8b;
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 0.2s ease;
+}
+.popup .content header span:hover{
+    transform: scale(1.2);
+}
+
+.popup .content form{
+    margin: 15px 25px 35px;
+}
+
+.popup .content form :where(input, textarea){
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    padding: 15px 15px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    outline: none;
+}
+.popup .content form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.popup .content form .row{
+    margin-bottom: 20px;
+}
+
+.popup .content form .row label{
+    display: block; /*block is must otherwise margin not apply*/
+    margin-bottom: 10px;
+}
+
+.popup .content form button{
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    height: 40px;
+    background: #2882e9;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.popup .content form button:hover {
+    background-color: #2274d1;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(176, 219, 255); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2274d1; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2274d1
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+  }
+
+  footer .rmst a{
+    text-decoration: none;
+    color: #ffffff;
+  }
