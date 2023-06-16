@@ -24,3 +24,7 @@ JavaScript practice exercises with solutions
 <p>******</p>
 <img src="https://github.com/Sandunrmst/mini-projects/assets/49017841/b562c93b-3324-4efe-a0d1-9c19c65ea7d2" alt="weather app">
 
+<h1>Note App</h1>
+<a href="https://sandunrmst.github.io/mini-projects/note-app/" target="_blank"> View Note App</a><br>
+<p>******</p>
+<img src="https://github.com/Sandunrmst/mini-projects/assets/49017841/5b93fcf3-a554-46c0-ba65-0f862555d962" alt="note app">
