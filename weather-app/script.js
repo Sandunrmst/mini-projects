@@ -1,6 +1,7 @@
+import APIKEY from "./apiKey.js";
+
 (function (){
 
-    const APIKEY = "2e16d54d58f5222da129eb82c142b5ce";
     //please kindly make your own API key with and it's free -> https://openweathermap.org/
     const APIURL = "https://api.openweathermap.org/data/2.5/weather?units=metric";
     // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
