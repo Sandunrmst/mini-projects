@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+/*Header*/
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #ff4321;
+}
+
+nav .logo img{
+    width: 200px;
+}
+
+#close-btn{
+    display: none;
+}
+
+#menu-btn{
+    display: none;
+}
+
+nav ul{
+    flex: 1; /*Using this way we can aling menu to left side*/
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block; /*Using this way we can aling menu to left side*/
+    margin: 10px 20px;
+}
+
+/* list line appear when mouse hover start*/
+nav ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: ' ';
+    width: 0; /*HIDE LINE*/
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 80%; /*Display LINE mouse move*/
+}
+/* list line appear when mouse hover end*/
+
+nav .dark-mode img{
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
+}
+
+
+.info{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.info a{
+    color: var(--primary-color);
+}
+
+.info h1{
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.info span{
+    color: #ff4321;
+}
+
+.info p{
+    color: var(--secondary-color);
+    line-height: 22px;
+    font-size: 18px;
+    max-width: 720px;
+}
+
+.info .download {
+
+    font-size: 1.2rem;
+    background: var(--secondary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+.info .download:hover {
+    background: #ff4321;
+    box-shadow: -3px 23px 11px -21px rgba(0,0,0,0.58);
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img{
+    bottom: 50px;
+}
+
+.img-box:hover .women{
+    left: 50px;
+}
+
+.social-links{
+    margin-top: 80px;
+}
+
+.social-links a{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+.social-links a:hover{
+    color: #ff4321;
+}
+
+/*Mobile View*/
+
+@media only screen and (max-width: 800px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top:77px;
+        left: 0;
+        width: 0;/*Hide to get slide move when click on menu Icon*/
+        height: 100%;
+        position: fixed;
+        background: #ff4321;
+        z-index: 5;
+
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+
+        transition: all 0.25s ease-in-out;
+
+    }
+
+    
+    nav ul.active{
+        width: 50%; /*Display menu*/
+    }
+    
+    #close-btn{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 80px;
+        right: 35px;
+        font-size: 2.2rem;
+        border-radius: 50px;
+        border: 2px solid var(--secondary-color);
+        transition: all 0.25s ease-in-out;
+    }
+
+
+    #close-btn:hover{
+        transform: scale(1.2);
+    }
+
+    #menu-btn.hide{
+        display: none; /*Hide when slide menu is active*/
+    }
+
+    nav ul li a{
+        display: none; /*Hide to get slide move when click on menu Icon*/
+    }
+
+    nav ul li a.active-a{
+        display: block; /*Dispaly a tag*/
+    }
+
+    nav ul li{
+        margin: 15px;
+        
+    }
+    nav #menu-btn{
+        display: block;
+        cursor: pointer;
+        font-size: 2.2rem;
+        color: var(--primary-color);
+    }
+
+    .info h1{
+        font-size: 60px;
+        max-width: 50%;
+    }
+
+    .info p{
+        max-width: 250px;
+    }
+
+    .img-box{
+
+        width: 40%;
+        height: 60%;
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+
+    } 
+
+    .img-box img{
+
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    .img-box:hover .back-img{
+        right: -40px;
+    }
+    
+    .img-box:hover .women{
+        left: -60px;
+    }
+
+    .social-links{
+        margin-top:2px;
+    }
+    
+}
+
+
+/*Header end*/
+
